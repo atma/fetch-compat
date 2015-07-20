@@ -1,12 +1,12 @@
 {
-  "name": "whatwg-fetch",
+  "name": "fetch-compat",
   "version": "0.9.0",
   "main": "fetch.js",
-  "repository": "github/fetch",
+  "repository": "atma/fetch-compat",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/github/fetch/blob/master/LICENSE"
+      "url": "https://github.com/atma/fetch-compat/blob/master/LICENSE"
     }
   ],
   "devDependencies": {
