@@ -8,7 +8,7 @@ responses than using an XMLHttpRequest. This polyfill is written as closely as
 possible to the standard Fetch specification at https://fetch.spec.whatwg.org.
 
 ## Yet another fetch polyfill?
-This project is the fork of Github [fetch](https://github.com/bitinn/node-fetch)
+This project is the fork of Github [fetch](https://github.com/github/fetch)
 polyfill with the only difference - provide `fetch` support not only for modern
 browsers but for older browsers too.
 
