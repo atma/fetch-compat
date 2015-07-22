@@ -1,8 +1,8 @@
-importScripts('../node_modules/chai/chai.js')
+importScripts('../node_modules/proclaim/lib/proclaim.js')
 importScripts('../node_modules/mocha/mocha.js')
 
 mocha.setup('tdd')
-self.assert = chai.assert
+self.assert = self.proclaim
 
 importScripts('../bower_components/es6-promise/promise.js')
 importScripts('../fetch.js')

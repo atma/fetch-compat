@@ -4,8 +4,7 @@
   "main": "fetch.js",
   "devDependencies": {
     "es6-promise": "1.0.0",
-    "es5-shim": "4.1.10",
-    "proclaim": "~3.3.0"
+    "es5-shim": "4.1.10"
   },
   "ignore": [
     ".*",
