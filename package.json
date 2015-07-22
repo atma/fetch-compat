@@ -1,6 +1,6 @@
 {
   "name": "fetch-compat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "fetch.js",
   "repository": "atma/fetch-compat",
   "licenses": [
