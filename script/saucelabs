@@ -9,7 +9,11 @@ node ./script/server $port &>/dev/null &
 server_pid=$!
 trap "kill $server_pid" INT EXIT
 
-job=$(./script/saucelabs-start "http://localhost:$port/test/test.html")
+if [ "$SAUCE_BROWSER" == "internet explorer" ] && [ "$SAUCE_VERSION" -eq "8" ]; then
+  job=$(./script/saucelabs-start "http://localhost:$port/test/test-ie8.html")
+else
+  job=$(./script/saucelabs-start "http://localhost:$port/test/test.html")
+fi
 
 while true
 do

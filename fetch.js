@@ -289,7 +289,12 @@
         return;
       }
 
-      xhr.onload = function() {
+      xhr.onreadystatechange = function() {
+        //ready?
+        if (xhr.readyState !== 4) {
+          return
+        }
+
         var status = (xhr.status === 1223) ? 204 : xhr.status
         if (status < 100 || status > 599) {
           reject(new TypeError('Network request failed'))
